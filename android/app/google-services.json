@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "602760113468",
+    "project_id": "balizatodoapp",
+    "storage_bucket": "balizatodoapp.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:602760113468:android:73bc4def02455a5ca00239",
+        "android_client_info": {
+          "package_name": "com.example.balize_todo"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "602760113468-7b5u8miii60d1i9ilglmalluc5pil1av.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.balize_todo",
+            "certificate_hash": "a75428f40602a43671f5b69904e4b22f0caf9f45"
+          }
+        },
+        {
+          "client_id": "602760113468-77tpgkq99tt0ll3pm3vc0ag3md2flgde.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC5zJAuyaFpm6rZ0T2WJSwH2GiXo2gNw78"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "602760113468-77tpgkq99tt0ll3pm3vc0ag3md2flgde.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
