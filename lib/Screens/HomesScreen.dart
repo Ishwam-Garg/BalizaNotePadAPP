@@ -29,6 +29,8 @@ class HomeScreen extends StatefulWidget {
 
 class _HomeScreenState extends State<HomeScreen> {
 
+  final GlobalKey<ScaffoldState> _scaffoldkey = new GlobalKey<ScaffoldState>();
+
   Stream<QuerySnapshot> getTodoData(User user) {
 
     Stream<QuerySnapshot> snapshot;
@@ -47,6 +49,7 @@ class _HomeScreenState extends State<HomeScreen> {
         return true;
       },
       child: Scaffold(
+        key: _scaffoldkey,
         drawer: Drawer(
           child: Container(
             height: MediaQuery.of(context).size.height,
@@ -156,7 +159,8 @@ class _HomeScreenState extends State<HomeScreen> {
                     //drawer button
                     GestureDetector(
                         onTap: (){
-                          Scaffold.of(context).openDrawer();
+                          _scaffoldkey.currentState.openDrawer();
+                          //Scaffold.of(context).openDrawer();
                         },
                         child: Container(
                           padding: EdgeInsets.all(10),

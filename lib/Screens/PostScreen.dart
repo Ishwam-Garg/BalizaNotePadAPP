@@ -101,26 +101,39 @@ class _PostScreenState extends State<PostScreen> {
                                   ),
                                 ),
                               SizedBox(height: 30,),
-                              Row(
-                                mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                                children: [
-                                  Container(
-                                    padding: EdgeInsets.only(bottom: 10),
-                                    child: Align(
-                                      alignment: Alignment.bottomRight,
-                                      child: Text(widget.data.data()["date"].toString() + ' ' + widget.data.data()["time"].toString(),
-                                        overflow: TextOverflow.clip,
-                                        maxLines: 1,
-                                        style: TextStyle(
-                                            fontStyle: FontStyle.italic,
-                                            fontWeight: FontWeight.w500,
-                                            fontSize: 12,color: Constants.primary_dark.withOpacity(0.6)),),
+                              Container(
+                                height: 50,
+                                child: Row(
+                                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                                  crossAxisAlignment: CrossAxisAlignment.start,
+                                  children: [
+                                    Container(
+                                      padding: EdgeInsets.only(bottom: 10),
+                                      child: Align(
+                                        alignment: Alignment.bottomLeft,
+                                        child: Text(widget.data.data()["date"].toString() + ' ' + widget.data.data()["time"].toString(),
+                                          overflow: TextOverflow.clip,
+                                          maxLines: 1,
+                                          style: TextStyle(
+                                              fontStyle: FontStyle.italic,
+                                              fontWeight: FontWeight.w500,
+                                              fontSize: 12,color: Constants.primary_dark.withOpacity(0.6)),),
+                                      ),
                                     ),
-                                  ),
-                                  Container(
-
-                                  ),
-                                ],
+                                    Align(
+                                      alignment: Alignment.bottomCenter,
+                                      child: Container(
+                                        child: Row(
+                                          children: [
+                                            Icon(Icons.image_outlined,color: Constants.primary_dark.withOpacity(0.6)),
+                                            SizedBox(width: 10,),
+                                            Icon(Icons.mic,color: Constants.primary_dark.withOpacity(0.6)),
+                                          ],
+                                        ),
+                                      ),
+                                    ),
+                                  ],
+                                ),
                               ),
 
 

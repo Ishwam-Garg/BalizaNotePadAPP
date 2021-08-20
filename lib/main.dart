@@ -1,5 +1,6 @@
 import 'package:balize_todo/Screens/HomesScreen.dart';
 import 'package:balize_todo/Screens/LoginScreen.dart';
+import 'package:balize_todo/Screens/SplashScreen.dart';
 import 'package:balize_todo/Services/RootUserLoggedIn.dart';
 import 'package:flutter/material.dart';
 import 'package:firebase_core/firebase_core.dart';
@@ -20,7 +21,7 @@ class _MainState extends State<Main> {
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-      home: CheckRootUser(),
+      home: SplashScreen(),
     );
   }
 }
